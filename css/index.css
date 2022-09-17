@@ -1,4 +1,14 @@
 @charset "utf-8";
+@font-face{
+    font-family: 'EVADB';
+    src:url('../font/EVADB.otf');
+}
+
+@font-face{
+    font-family: 'EVAUB';
+    src:url('../font/EVAUB.otf');
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -107,12 +117,21 @@ a:active{
 	width: 30px;
 }
 
-@font-face{
-    font-family: 'EVADB';
-    src:url('../font/EVADB.otf');
+
+
+.title{
+	display: flex;
+	margin-left: 20px;
 }
 
-@font-face{
-    font-family: 'EVAUB';
-    src:url('../font/EVAUB.otf');
+.title p{
+	font-size: 25px;
+	font-family: EVAUB;
+	color: ghostwhite;
+	line-height: 28px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-top: 9px solid #a11818;
+	border-bottom: 6px solid #a11818;
+	border-radius: 2px;
 }
