@@ -17,6 +17,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
+	overflow: hidden;
 }
 
 a:link{
@@ -39,11 +40,10 @@ a:active{
 	background-image: url("../img/head.png");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-size: auto 120vh;
+	background-size: auto 115vh;
 	background-position: center;
 	height: 100vh;
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-	overflow: hidden;
 }
 
 #shortInfo{
