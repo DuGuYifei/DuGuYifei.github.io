@@ -42,11 +42,13 @@ a:active{
 	background-size: auto 120vh;
 	background-position: center;
 	height: 100vh;
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 #shortInfo{
+	position: fixed;
 	margin-left: 15vw;
-	margin-top: 20vh;
+	margin-top: 18vh;
 	margin-right: 15vw;
 }
 
@@ -125,7 +127,7 @@ a:active{
 }
 
 .title p{
-	font-size: 25px;
+	font-size: 30px;
 	font-family: EVAUB;
 	color: ghostwhite;
 	line-height: 28px;
