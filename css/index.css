@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 @font-face{
     font-family: 'EVADB';
     src:url('../font/EVADB.otf');
@@ -22,8 +23,14 @@ a:active{
 	text-decoration:none;
 }
 
+html{
+	scroll-snap-type: y mandatory;
+}
+
 body{
 	margin: 0;
+	overflow: scroll;
+	overflow-x: hidden;
 }
 
 body::before {
@@ -43,7 +50,13 @@ body::before {
 	justify-content: right;
 	height: 100vh;
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-	margin-bottom: 20px;
+	/* margin-bottom: 20px; */
+	align-items: flex-end;
+	scroll-snap-align: start;
+}
+
+#projectClass{
+	scroll-snap-align: start;
 }
 
 #profile::before {
@@ -59,11 +72,116 @@ body::before {
 	background-position: center center;
 }
 
-#shortInfo{
+nav{
+	visibility: hidden;
+	top: 100px;
+	left: 50px;
 	position: fixed;
+	font-size: 40px;
+	padding-left: 45px;
+	padding-right: 45px;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background-color: rgba(25, 2, 2, 0.5);
+	border-left: 2px solid #fbae00;
+	border-right: 2px solid #fbae00;
+}
+
+.navtitlewrap{
+	border:2px solid #9d6900;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 4px
+}
+
+.navtitle{
+	display: flex;
+	align-items: center;
+	background-color: rgba(47, 0, 0, 0.5);
+	border: 1px solid #862100;
+}
+
+.navtitlein{
+	width: 100%;
+	border-image-source: radial-gradient(60% 60%, transparent 0px, transparent 100%, rgba(255,120,0,0.7) 100%);
+	border-image-slice: 1;
+	border-width: 1px;
+	border-style: solid;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 3px;
+	font-family: EVAUB;
+	line-height: 55px;
+	font-size: 30px;
+}
+
+nav h3{
+	margin: 0;
+	color: #a11818;
+	text-align: center;
+}
+
+.navlinkwrap{
+	border-left:3px solid #9d6900;
+	border-right:3px solid #9d6900;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.navlink{
+	display: flex;
+	align-items: center;
+	background-color: rgba(47, 0, 0, 0.5);
+	border: 1px solid #862100;
+	color: #fcab00;
+}
+
+.navlinkin{
+	width: 100%;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #885b00;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 3px;
+}
+
+.navlinkin h4{
+	margin: 0;
+	font-family: EVAUB;
+	line-height: 40px;
+	font-size: 30px;
+}
+
+.navlinkin p{
+	margin: 0;
+	font-size: 10px;
+	line-height: 10px;
+	margin-bottom: 3px;
+	color: #83dc00;
+}
+
+@media screen and (min-width: 1080px) {
+	nav{
+		visibility: visible;
+	}
+}
+
+#shortInfo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	margin-left: 15vw;
-	margin-top: 18vh;
+	margin-bottom: 20vh;
 	margin-right: 15vw;
+}
+
+@media screen and (max-width: 1080px) {
+	#shortInfo{
+		position: fixed;
+	}
 }
 
 #intro{
@@ -129,13 +247,12 @@ body::before {
 	width: 30px;
 }
 
-
 .title{
 	display: flex;
 	margin-left: 20px;
 }
 
-.title{
+.title h1{
 	font-size: 30px;
 	font-family: EVAUB;
 	color: ghostwhite;
@@ -144,4 +261,114 @@ body::before {
 	border-top: 10px solid #a11818;
 	border-bottom: 8px solid #a11818;
 	border-radius: 2px;
+	line-height: 40px;
+}
+
+#otherlinks h1{
+	border-color: #fcab00;
+}
+
+.pages{
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 60px
+}
+
+.onepage{
+	--w: 384px;
+	--h: 216px;
+	margin-bottom: 20px;
+}
+
+.onepage{
+	margin-right: 45px;
+}
+
+.contents{
+	width: var(--w);
+	max-width: 75vw;
+	height: var(--h);
+	overflow: hidden;
+	display: flex;
+	justify-content: end;
+	flex-direction: column;
+	color: black;
+	transition: all 0.5s ease 0s;
+	border-radius: 15px;
+	box-shadow: 0px 5px 20px rgb(38, 48, 62);
+}
+
+.contents:hover{
+	transform: scale(1.2);
+}
+
+.contentwrap{
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 15px;
+}
+
+.contents h2{
+	margin: 0;
+	margin-left: 10px;
+	margin-top: 3px;
+	font-family: EVAUB;
+	font-size: 20px;
+	line-height: 22px;
+	color: #a11818;
+}
+
+@media screen and (orientation:portrait){
+	.contents h2{
+		font-size: 16px;
+	}
+}
+
+.contents p{
+	margin: 0;
+	margin-left: 10px;
+	margin-bottom: 5px;
+	font-family: EVADB;
+	line-height: 20px;
+}
+
+.pageimg{
+	width: var(--w);
+	max-width: 75vw;
+	height: var(--h);
+	background-size: var(--w) var(--h);
+	background-position: center center;
+	position: absolute;
+	z-index: -1;
+	border-radius: 15px;
+	transition: all 0.5s ease 0s;
+}
+
+.lanwrap{
+	display: flex;
+	align-items: baseline;
+	line-height: 0;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	font-size: 17px;
+	color: black;
+}
+
+@media screen and (orientation:portrait){
+	.lanwrap{
+		font-size: 12px;
+		margin-top: 1px;
+		margin-bottom: 1px;
+	}
+}
+
+.dot{
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	margin-right: 5px;
+	margin-left: 7px;
+}
+
+.contents:hover .pageimg{
+	transform: scale(1.2);
 }

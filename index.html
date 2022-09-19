@@ -3,11 +3,13 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/languagecolor.css">
+		<link rel="stylesheet" href="css/imgid.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Liu Yifei 刘逸飞 Personal website</title>
 	</head>
 	<body>
-		<section id="profile" class="clearfix">
+		<section id="profile">
 			<div id="shortInfo">
 				<div id="intro">
 					<img src="img/avatar.svg" width="100%" alt="avatar">
@@ -39,59 +41,711 @@
 					</div>
 				</div>
 			</div>
+			<nav>
+				<div class="navtitlewrap">
+					<div class="navtitle">
+						<div class="navtitlein">
+							<h3>目録</h3>
+						</div>
+					</div>
+				</div>
+				<div class="navlinkwrap">
+					<a href="#projectClass">
+						<div class="navlink">
+							<div class="navlinkin">
+								<h4>Github Repositories</h4>
+								<p>GITHUB倉庫紹介</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="navlinkwrap">
+					<a href="#otherlinks">
+						<div class="navlink">
+							<div class="navlinkin">
+								<h4>Other Links</h4>
+								<p>其他項目鏈接</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="navlinkwrap">
+					<a href="#otherlinks">
+						<div class="navlink">
+							<div class="navlinkin">
+								<h4>About ME (CV)</h4>
+								<p>關於我，下載簡歷</p>
+							</div>
+						</div>
+					</a>
+				</div>
+			</nav>
 		</section>
 		<section id="projectClass">
-			<section id="log" class="classwrap">
+			<section id="log">
 				<div class="title">
-					LOG
+					<h1>LOG</h1>
+				</div>
+				<div class="pages">
+					<div class="onepage">
+						<a href="https://github.com/DuGuYifei/Notes">
+							<div class="contents">
+								<div class="pageimg" id="noteblog"></div>
+								<div class="contentwrap">
+									<h2>
+										NOTE BLOG
+										<div class="lanwrap">
+											<div class="dot" id="md"></div>md
+										</div>
+									</h2>
+									<p>This is my blog of notes for all things I have learned since I started learning
+										computer science.
+										<br>Subject details in the README
+									</p>
+								</div>
+							</div>
+						</a>
 					</div>
+					<div class="onepage">
+						<a href="https://duguyifei.github.io/blog">
+							<div class="contents">
+								<div class="pageimg" id="projectblog"></div>
+								<div class="contentwrap">
+									<h2>PROJECT BLOG
+										<div class="lanwrap">
+											<div class="dot" id="md"></div>md
+										</div>
+									</h2>
+									<p>Blog of some part of my projects.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="onepage">
+						<a href="https://github.com/DuGuYifei/LeetCode_Record">
+							<div class="contents">
+								<div class="pageimg" id="leetcode"></div>
+								<div class="contentwrap">
+									<h2>LEETCODE RECORD
+										<div class="lanwrap">
+											<div class="dot" id="cpp"></div>C++
+										</div>
+									</h2>
+									<p>Record algorithm question I have solved in Leetcode.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
 			</section>
 
 			<section id="AI" class="classwrap">
 				<div class="title">
-					AI
+					<h1>AI<h1>
+				</div>
+				<div class="pages">
+					<div class="onepage">
+						<a href="https://github.com/DuGuYifei/Yolov5_FPS_AICheatPrinciple">
+							<div class="contents">
+								<div class="pageimg" id="aicheat"></div>
+								<div class="contentwrap">
+									<h2>Yolov5_FPS_AICheatPrinciple
+										<div class="lanwrap">
+											<div class="dot" id="py"></div>Python
+										</div>
+									</h2>
+									<p>Research how to realize AI cheating in FPS game by Yolo_v5.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="onepage">
+						<a href="https://github.com/DuGuYifei/Robomaster_WIndWheelTargetDetect">
+							<div class="contents">
+								<div class="pageimg" id="windtarget"></div>
+								<div class="contentwrap">
+									<h2>DJI Robomaster Match WindWheelTargetDetect
+										<div class="lanwrap">
+											<div class="dot" id="cpp"></div>C++
+										</div>
+									</h2>
+									<p>One function which can detect the shoot target that changes in rotating wind
+										wheel in DJI Robomaster match 2022.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="onepage">
+						<a href="https://github.com/DuGuYifei/PoseDetect2UnityModel">
+							<div class="contents">
+								<div class="pageimg" id="pose2unity"></div>
+								<div class="contentwrap">
+									<h2>PoseEstimation2UnityModel
+										<div class="lanwrap">
+											<div class="dot" id="py"></div>Python
+											<div class="dot" id="cs"></div>C#
+										</div>
+									</h2>
+									<p>Use MHFormer [CVPR 2022] to estimate pose and use result to control rotaion of
+										bones in model by Unity.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="onepage">
+						<a href="https://github.com/DuGuYifei/FaceRecognize_LHH">
+							<div class="contents">
+								<div class="pageimg" id="facelhh"></div>
+								<div class="contentwrap">
+									<h2>FaceRecognize_LHH
+										<div class="lanwrap">
+											<div class="dot" id="cpp"></div>C++
+											<div class="dot" id="c"></div>C
+										</div>
+									</h2>
+									<p>A project of face recognition for 24*24px pictures. Write LBPH, Haar, Hog without
+										library. Design a LHH algorithm to combine 3 features and train the model to
+										adjust parameter to get lower error rate.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="onepage">
+						<a href="https://github.com/DuGuYifei/FaceRecognitionDemo">
+							<div class="contents">
+								<div class="pageimg" id="facerecdemo"></div>
+								<div class="contentwrap">
+									<h2>FaceRecognition(OpenCV)
+										<div class="lanwrap">
+											<div class="dot" id="py"></div>Python
+										</div>
+									</h2>
+									<p>Use openCV to train and recognize face. A simple demo when start learning CV.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="onepage">
+						<a href="https://github.com/DuGuYifei/ANN_predictTemperature">
+							<div class="contents">
+								<div class="pageimg" id="anntemp"></div>
+								<div class="contentwrap">
+									<h2>ANN predict Temperature
+										<div class="lanwrap">
+											<div class="dot" id="matlab"></div>MATLAB
+										</div>
+									</h2>
+									<p>The lab of AI course for ANN to predict temperature.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="onepage">
+						<a href="https://github.com/DuGuYifei/AI_ACO">
+							<div class="contents">
+								<div class="pageimg" id="aco"></div>
+								<div class="contentwrap">
+									<h2>Ant Colony Optimization(ACO)
+										<div class="lanwrap">
+											<div class="dot" id="cpp"></div>C++
+											<div class="dot" id="c"></div>C
+										</div>
+									</h2>
+									<p>The lab of AI course for ACO to find shortest path.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="onepage">
+						<a href="https://github.com/DuGuYifei/DecisionTree">
+							<div class="contents">
+								<div class="pageimg" id="decitree"></div>
+								<div class="contentwrap">
+									<h2>Decision Tree
+										<div class="lanwrap">
+											<div class="dot" id="matlab"></div>MATLAB
+										</div>
+									</h2>
+									<p>The lab of AI course for decision tree.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="onepage">
+						<a href="https://github.com/DuGuYifei/Q_Learning_Sailor">
+							<div class="contents">
+								<div class="pageimg" id="qsail"></div>
+								<div class="contentwrap">
+									<h2>Q-Learning Sailor map
+										<div class="lanwrap">
+											<div class="dot" id="matlab"></div>MATLAB
+										</div>
+									</h2>
+									<p>The lab AI course for reinforcement learning. Using Q learning to find a best
+										route for sailor.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="onepage">
+						<a href="https://github.com/DuGuYifei/GA_GeneticAlgorithm">
+							<div class="contents">
+								<div class="pageimg" id="gapath"></div>
+								<div class="contentwrap">
+									<h2>GA_GeneticAlgorithm
+										<div class="lanwrap">
+											<div class="dot" id="cpp"></div>C++
+											<div class="dot" id="c"></div>C
+										</div>
+									</h2>
+									<p>The lab of AI course for Genetic Algorithm to find shortest path.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="onepage">
+						<a href="https://github.com/DuGuYifei/SimulatedAnnealing">
+							<div class="contents">
+								<div class="pageimg" id="sa"></div>
+								<div class="contentwrap">
+									<h2>Simulated Annealing
+										<div class="lanwrap">
+											<div class="dot" id="cpp"></div>C++
+											<div class="dot" id="c"></div>C
+										</div>
+									</h2>
+									<p>The lab of AI course for Simulated Annealing to find shortest path.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="onepage">
+						<a href="https://github.com/DuGuYifei/FuzzySystem_juggler">
+							<div class="contents">
+								<div class="pageimg" id="fzjg"></div>
+								<div class="contentwrap">
+									<h2>Fuzzy System juggler
+										<div class="lanwrap">
+											<div class="dot" id="matlab"></div>MATLAB
+										</div>
+									</h2>
+									<p>The lab of AI course for fuzzy system to realize balance of juggler.</p>
+								</div>
+							</div>
+						</a>
+					</div>
 				</div>
 			</section>
 
 			<section id="database" class="classwrap">
 				<div class="title">
-					DATABASE
+					<h1>DATABASE</h1>
 				</div>
-			</section>
-
-			<section id="script" class="classwrap">
-				<div class="title">
-					SCRIPT
+				<div class="pages">
+					<div class="onepage">
+						<a href="https://github.com/DuGuYifei/RailwayStation_DataWarehouse">
+							<div class="contents">
+								<div class="pageimg" id="dwrs"></div>
+								<div class="contentwrap">
+									<h2>DataWarehouse_RailwayStation
+										<div class="lanwrap">
+											<div class="dot" id="py"></div>Python
+											<div class="dot" id="tsql"></div>TSQL
+										</div>
+									</h2>
+									<p>Simulate Data Warehouse of railway station for occupancy rate and remain ticket.
+										Include: specify requiremnt, generate data by python, build source database,
+										datawarehouse design and implementation, ELT process, MDX queries, optimization,
+										BI dashboard.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="onepage">
+						<a href="https://github.com/DuGuYifei/FamilyBookkeepingDatabase/tree/main/HomeExpenseRegister">
+							<div class="contents">
+								<div class="pageimg" id="dbfbook"></div>
+								<div class="contentwrap">
+									<h2>Database family bookkeeping
+										<div class="lanwrap">
+											<div class="dot" id="tsql"></div>TSQL
+										</div>
+									</h2>
+									<p>Database of family bookkeeping and SQL queries.</p>
+								</div>
+							</div>
+						</a>
+					</div>
 				</div>
 			</section>
 
 			<section id="software" class="classwrap">
 				<div class="title">
-					SOFTWARE
+					<h1>SOFTWARE</h1>
+				</div>
+				<div class="pages">
+					<div class="onepage">
+						<a href="https://github.com/DuGuYifei/WallPaperEngine">
+							<div class="contents">
+								<div class="pageimg" id="wallengine"></div>
+								<div class="contentwrap">
+									<h2>Self Wallpaper Engine
+										<div class="lanwrap">
+											<div class="dot" id="cpp"></div>C++
+											<div class="dot" id="cs"></div>C#
+										</div>
+									</h2>
+									<p>Create Wallpaper Engine which support html file, website, picture, video, exe and
+										let user can interact with wallaper. Support English and Chinese.
+										<br>Inside project, there is Webkit Chrome I created by C# in the other project.
+									</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="onepage">
+						<a href="https://github.com/DuGuYifei/WebkitChrome">
+							<div class="contents">
+								<div class="pageimg" id="webkitchrome"></div>
+								<div class="contentwrap">
+									<h2>Webkit Chrome by CefSharp
+										<div class="lanwrap">
+											<div class="dot" id="cs"></div>C#
+										</div>
+									</h2>
+									<p>Remove redundant element for using in Wallpaper Engine.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="onepage">
+						<a href="https://github.com/DuGuYifei/WebkitCoreBrowser">
+							<div class="contents">
+								<div class="pageimg" id="webkitbrowser"></div>
+								<div class="contentwrap">
+									<h2>WebkitBrowser by Webkit.Net
+										<div class="lanwrap">
+											<div class="dot" id="cs"></div>C#
+										</div>
+									</h2>
+									<p>This is old version for using in wallpaper engine but be abondanted because of
+										obslete Webkit.Net.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="onepage">
+						<a href="https://github.com/DuGuYifei/WallpaperEngineDemo">
+							<div class="contents">
+								<div class="pageimg" id="wallenginedemo"></div>
+								<div class="contentwrap">
+									<h2>Wallpaper Engine Old version
+										<div class="lanwrap">
+											<div class="dot" id="cpp"></div>C++
+										</div>
+									</h2>
+									<p>Wallpaper Engine demo which only support picture and video.</p>
+								</div>
+							</div>
+						</a>
+					</div>
 				</div>
 			</section>
 
 			<section id="website" class="classwrap">
 				<div class="title">
-					WEBSITE
+					<h1>WEBSITE</h1>
+				</div>
+				<div class="pages">
+					<div class="onepage">
+						<a href="https://duguyifei.github.io/Vue_MusicPlayer_Demo">
+							<div class="contents">
+								<div class="pageimg" id="webmusic"></div>
+								<div class="contentwrap">
+									<h2>Vue_ MusicPlayer_Demo
+										<div class="lanwrap">
+											<div class="dot" id="vue"></div>vue
+											<div class="dot" id="html"></div>html
+											<div class="dot" id="css"></div>css
+											<div class="dot" id="js"></div>js
+										</div>
+									</h2>
+									<p>Using Vue and some API to realize a website to listen music, read comment and
+										lyric.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="onepage">
+						<a href="https://github.com/DuGuYifei/DuGuYifei.github.io">
+							<div class="contents">
+								<div class="pageimg" id="perweb"></div>
+								<div class="contentwrap">
+									<h2>Personal webpage
+										<div class="lanwrap">
+											<div class="dot" id="html"></div>html
+											<div class="dot" id="css"></div>css
+											<div class="dot" id="js"></div>js
+										</div>
+									</h2>
+									<p>This is source code of this page. Adapt to different device.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="onepage">
+						<a href="https://duguyifei.github.io/Hobby">
+							<div class="contents">
+								<div class="pageimg" id="hobby"></div>
+								<div class="contentwrap">
+									<h2>Hobby
+										<div class="lanwrap">
+											<div class="dot" id="html"></div>html
+											<div class="dot" id="css"></div>css
+											<div class="dot" id="js"></div>js
+										</div>
+									</h2>
+									<p>Project of course in Hypertext & hypermedia.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section id="script" class="classwrap">
+				<div class="title">
+					<h1>SCRIPT</h1>
+				</div>
+				<div class="pages">
+					<div class="onepage">
+						<a href="https://github.com/DuGuYifei/renameMP3_ID3TAG">
+							<div class="contents">
+								<div class="pageimg" id="rnmp"></div>
+								<div class="contentwrap">
+									<h2>rename MP3 by bino-file
+										<div class="lanwrap">
+											<div class="dot" id="sh"></div>shell
+										</div>
+									</h2>
+									<p>Using Linux shell to rename mp3 file in batch by read and write binary file
+										without using library for mp3.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="onepage">
+						<a href="https://github.com/DuGuYifei/Hexo_File_link">
+							<div class="contents">
+								<div class="pageimg" id="hexomodi"></div>
+								<div class="contentwrap">
+									<h2>Hexo blog modify source code
+										<div class="lanwrap">
+											<div class="dot" id="js"></div>js
+										</div>
+									</h2>
+									<p>Modify one file in node_modules to realize requirement of local article link.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="onepage">
+						<a href="https://github.com/DuGuYifei/OfficePythonTool">
+							<div class="contents">
+								<div class="pageimg" id="offpytool"></div>
+								<div class="contentwrap">
+									<h2>Office Python Tool
+										<div class="lanwrap">
+											<div class="dot" id="py"></div>Python
+										</div>
+									</h2>
+									<p>Create some office tool for my friends.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="onepage">
+						<a href="https://github.com/DuGuYifei/GUI_Zenity_Find">
+							<div class="contents">
+								<div class="pageimg" id="zenityfind"></div>
+								<div class="contentwrap">
+									<h2>Linux GUI Zenity FIND cmd
+										<div class="lanwrap">
+											<div class="dot" id="sh"></div>shell
+										</div>
+									</h2>
+									<p>Use Zenity to realize a GUI of linux command -- find.</p>
+								</div>
+							</div>
+						</a>
+					</div>
 				</div>
 			</section>
 
 			<section id="game" class="classwrap">
 				<div class="title">
-					GAME
+					<h1>GAME</h1>
+				</div>
+				<div class="pages">
+					<div class="onepage">
+						<a href="https://github.com/DuGuYifei/MonsterDuelDice">
+							<div class="contents">
+								<div class="pageimg" id="monsterdice"></div>
+								<div class="contentwrap">
+									<h2>Monster Duel Dice
+										<div class="lanwrap">
+											<div class="dot" id="unity"></div>Unity
+											<div class="dot" id="cs"></div>C#
+										</div>
+									</h2>
+									<p>A unity 3D game demo of a SRPG game played by throwing dice.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="onepage">
+						<a href="https://github.com/DuGuYifei/HobbyPresentation_Unity">
+							<div class="contents">
+								<div class="pageimg" id="hobbyunity"></div>
+								<div class="contentwrap">
+									<h2>HobbyPresentation by Unity
+										<div class="lanwrap">
+											<div class="dot" id="unity"></div>Unity
+											<div class="dot" id="cs"></div>C#
+										</div>
+									</h2>
+									<p>A simple escaping room game which mainly used as 'ppt' in presentation.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="onepage">
+						<a href="https://github.com/DuGuYifei/OP_CPP_JAVA_SimulateWorld">
+							<div class="contents">
+								<div class="pageimg" id="worldsimulate"></div>
+								<div class="contentwrap">
+									<h2>OP_CPP_JAVA_SimulateWorld
+										<div class="lanwrap">
+											<div class="dot" id="java"></div>Java
+											<div class="dot" id="cpp"></div>C++
+										</div>
+									</h2>
+									<p>Two projects of simulating world respectively written in C++ and Java.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="onepage">
+						<a href="https://github.com/DuGuYifei/FridayThe13thITFacultyMatch">
+							<div class="contents">
+								<div class="pageimg" id="fridaygame"></div>
+								<div class="contentwrap">
+									<h2>Friday13th (faculty champion)
+										<div class="lanwrap">
+											<div class="dot" id="c"></div>C
+										</div>
+									</h2>
+									<p>A project of card game in command line which is a final project of semester for
+										whole IT faculty. <br> And realize a robot to play this game to get champion in
+										our faculty.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="onepage">
+						<a href="https://github.com/DuGuYifei/Sokoban_SDL">
+							<div class="contents">
+								<div class="pageimg" id="sokobansdl"></div>
+								<div class="contentwrap">
+									<h2>Sokoban made by SDL2
+										<div class="lanwrap">
+											<div class="dot" id="cpp"></div>C++
+										</div>
+									</h2>
+									<p>A project of Sokoban game written with SDL2.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="onepage">
+						<a href="https://github.com/DuGuYifei/SDL2_Game_RobotUnicornAttack">
+							<div class="contents">
+								<div class="pageimg" id="robotunicorn"></div>
+								<div class="contentwrap">
+									<h2>Robot Unicorn Attack SDL2
+										<div class="lanwrap">
+											<div class="dot" id="c"></div>C
+										</div>
+									</h2>
+									<p>A project of Robot Unicorn Attack written with SDL2.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="onepage">
+						<a href="https://github.com/DuGuYifei/CreateBMP_MonopolyGame">
+							<div class="contents">
+								<div class="pageimg" id="monopoly"></div>
+								<div class="contentwrap">
+									<h2>CreateBMP_MonopolyGame
+										<div class="lanwrap">
+											<div class="dot" id="c"></div>C
+										</div>
+									</h2>
+									<p>A game of monopoly in command line and create BMP file for the situation by code.
+									</p>
+								</div>
+							</div>
+						</a>
+					</div>
 				</div>
 			</section>
 
 			<section id="other" class="classwrap">
 				<div class="title">
-					OTHER
+					<h1>OTHER REPOSITORY</h1>
+				</div>
+				<div class="pages">
+					<div class="onepage">
+						<a href="https://github.com/DuGuYifei/B-Tree_Cache_andOtherProjectAlgorithm">
+							<div class="contents">
+								<div class="pageimg" id="aids"></div>
+								<div class="contentwrap">
+									<h2>Algorithm and Data Structure
+										<div class="lanwrap">
+											<div class="dot" id="cpp"></div>C++
+											<div class="dot" id="c"></div>C
+										</div>
+									</h2>
+									<p>Projects for course of AiDS.<br>Contain: B-Tree & simulate simple Cache, FIFO Queue, Files On Pendrive, XOR Linked List</p>
+								</div>
+							</div>
+						</a>
+					</div>
 				</div>
 			</section>
 
-			<section id="links" class="classwrap">
+			<section id="otherlinks" class="classwrap">
 				<div class="title">
-					ELINKS
+					<h1>OTHER LINKS</h1>
+				</div>
+				<div class="pages">
+					<div class="onepage">
+						<a href="https://www.figma.com/file/DhTuVF7S6PepodSE3OGANI/Cooler?node-id=0%3A1">
+							<div class="contents">
+								<div class="pageimg" id="figmacooler"></div>
+								<div class="contentwrap">
+									<h2>Figma Cooler
+										<div class="lanwrap">
+											<div class="dot" id="figma"></div>Figma
+										</div>
+									</h2>
+									<p>Design UI of Cooler (which is a software designed during HCI course) by using
+										Figma.</p>
+								</div>
+							</div>
+						</a>
+					</div>
 				</div>
 			</section>
 		</section>
