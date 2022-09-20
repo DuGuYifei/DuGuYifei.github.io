@@ -1,0 +1,23 @@
+#imgwrap{
+	display: block;
+	overflow: hidden;
+	width: 140px;
+	height: 180px
+}
+
+#imgwrap img{
+	width: 150px;
+	transform: translate(-8px, 0);
+}
+
+.baseinfo{
+	display: flex;	
+}
+
+.textbaseinfo .name{
+	display: flex;
+}
+
+.genmail{
+	display: flex;
+}

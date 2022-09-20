@@ -5,6 +5,7 @@
 		<link rel="stylesheet" href="css/index.css">
 		<link rel="stylesheet" href="css/languagecolor.css">
 		<link rel="stylesheet" href="css/imgid.css">
+		<link rel="stylesheet" href="css/cv.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Liu Yifei 刘逸飞 Personal website</title>
 	</head>
@@ -50,11 +51,26 @@
 					</div>
 				</div>
 				<div class="navlinkwrap">
+					<a href="#aboutme">
+						<div class="navlink">
+							<div class="navlinkin">
+								<h4 class="chose" data-word="About&ThickSpace;ME&ThickSpace;&thinsp;(CV)">About ME (CV)
+									<div class="scan"></div>
+								</h4>
+								<p class="chose" data-word="關於我(下載簡歷)">關於我(下載簡歷)</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="navlinkwrap">
 					<a href="#projectClass">
 						<div class="navlink">
 							<div class="navlinkin">
-								<h4>Github Repositories</h4>
-								<p>GITHUB倉庫紹介</p>
+								<h4 class="chose" data-word="Projects&ThickSpace;in&ThickSpace;Github">Projects in
+									Github
+									<div class="scan"></div>
+								</h4>
+								<p class="chose" data-word="GITHUB倉庫紹介">GITHUB倉庫紹介</p>
 							</div>
 						</div>
 					</a>
@@ -63,23 +79,72 @@
 					<a href="#otherlinks">
 						<div class="navlink">
 							<div class="navlinkin">
-								<h4>Other Links</h4>
-								<p>其他項目鏈接</p>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="navlinkwrap">
-					<a href="#otherlinks">
-						<div class="navlink">
-							<div class="navlinkin">
-								<h4>About ME (CV)</h4>
-								<p>關於我，下載簡歷</p>
+								<h4 class="chose" data-word="Other&ThickSpace;Links">Other Links
+									<div class="scan"></div>
+								</h4>
+								<p class="chose" data-word="其他項目鏈接">其他項目鏈接</p>
 							</div>
 						</div>
 					</a>
 				</div>
 			</nav>
+		</section>
+		<section id="aboutme">
+			<div class="baseinfo">
+				<div id="imgwrap">
+					<img src="img/photo.jpg" alt="realphoto">
+				</div>
+				<div class="textbaseinfo">
+					<div class="name">
+						<div class="info1">
+							<div>Last Name</div>
+							<div>Liu</div>
+						</div>
+						<div>
+							<div>First Name</div>
+							<div>Yifei</div>
+						</div>
+					</div>
+					<div class="genmail">
+						<div>Male</div>
+						<div>chnliuyifei@gmail.com</div>
+					</div>
+					<div>
+						<div>Language</div>
+						<div>Chinese, English</div>
+					</div>
+				</div>
+			</div>
+			<div>Skills</div>
+			<div>C++, Unity, C#, MSSQL, Python, C, R, Figma.</div>
+			<div>Honors & Awards recently</div>
+			<div>(2021/2022)Rector's scholarship of Politechnika Gdańska</div>
+			<div>Certifications</div>
+			<div>(2021)English B2</div>
+			<div>strange skills</div>
+			<div>World Taekwondo Federation Black Belt Certificate, Latin Dance Golden Certificate, The securities
+				qualification certificate of passing exam (Chinese)</div>
+			<div>Additional Info</div>
+			<div>Github</div>
+			<div>https://github.com/DuGuYifei</div>
+			<div>webpage</div>
+			<div>https://duguyifei.github.io</div>
+			<div>This page is temprarily in my Azure VM: yifei.dicegame.xyz</div>
+			<div>Education</div>
+			<div>Politechnika Gdańska: Data Engineering (undergraduate) -- GPA: 4.733/5</div>
+			<div>Shanghai Lixin University of Accounting and Finance: Management Bachelor -- GPA:3.33/4</div>
+			<div>Projects <a href="#projectClass">(click here see more)</a></div>
+			<div><a href="https://github.com/DuGuYifei/WallPaperEngine">Wallpaper Engine application</a></div>
+			<div><a href="https://github.com/DuGuYifei/RailwayStation_DataWarehouse">RailwayStation_DataWarehouse</a>
+			</div>
+			<div><a href="https://github.com/DuGuYifei/renameMP3_ID3TAG">Shell_renameMP3_ID3TAG</a></div>
+			<div><a href="https://github.com/DuGuYifei/Robomaster_WIndWheelTargetDetect">DJI Robomaster Match
+					WindWheelTargetDetect</a></div>
+			<div><a href="https://github.com/DuGuYifei/Yolov5_FPS_AICheatPrinciple">Yolov5_FPS_AICheatPrinciple</div>
+			<div><a href="https://github.com/DuGuYifei/PoseDetect2UnityModel">Pose Estimation to Unity Model</a></div>
+			<div><a href="https://github.com/DuGuYifei/FaceRecognize_LHH">FaceRecognize_LHH</a></div>
+			<div><a href="https://github.com/DuGuYifei/MonsterDuelDice">Unity-MonsterDuelDice</a></div>
+			<div><a href="https://github.com/DuGuYifei/OP_CPP_JAVA_SimulateWorld">OP_JAVA_SimulateWorld</a></div>
 		</section>
 		<section id="projectClass">
 			<section id="log">
@@ -138,7 +203,6 @@
 					</div>
 				</div>
 			</section>
-
 			<section id="AI" class="classwrap">
 				<div class="title">
 					<h1>AI<h1>
@@ -396,7 +460,8 @@
 										</div>
 									</h2>
 									<p>Create Wallpaper Engine which support html file, website, picture, video, exe and
-										let user can interact with wallaper. Support English and Chinese.
+										allow user interact with wallaper. Support multi-screens, two languages (English
+										and Chinese).
 										<br>Inside project, there is Webkit Chrome I created by C# in the other project.
 									</p>
 								</div>
@@ -717,7 +782,8 @@
 											<div class="dot" id="c"></div>C
 										</div>
 									</h2>
-									<p>Projects for course of AiDS.<br>Contain: B-Tree & simulate simple Cache, FIFO Queue, Files On Pendrive, XOR Linked List</p>
+									<p>Projects for course of AiDS.<br>Contain: B-Tree & simulate simple Cache, FIFO
+										Queue, Files On Pendrive, XOR Linked List</p>
 								</div>
 							</div>
 						</a>
