@@ -1,7 +1,8 @@
+var dis;
 let prevdis = scrollDis();
-
+let aboutme = document.getElementById('aboutme');
+let isOn = false;
 function scrollDis() {
-	let dis;
 	if (window.pageYOffset) {
 		dis = window.pageYOffset;
 	} else if (document.compatMode && document.compatMode != 'BackCompat') {
@@ -9,39 +10,25 @@ function scrollDis() {
 	} else if (document.body) {
 		dis = document.body.scrollTop;
 	}
-	return dis;
 }
 
-function throttle(fn, delay) {
-	var timer;
-	return function() {
-		var _this = this;
-		var args = arguments;
-		if (timer) {
-			return;
-		}
-		timer = setTimeout(function() {
-			fn.apply(_this, args);
-			timer = null; // 在delay后执行完fn之后清空timer，此时timer为假，throttle触发可以进入计时器
-		}, delay)
-	}
+aboutme.onmouseenter = function(event) {
+	isOn = true;
 }
 
-function autoScroll() {
-	let dis = scrollDis();
-	if (dis > 0 && dis < screen.width) {
-		if (dis < prevdis) {
-			console.log(1);
-			window.scrollTo(0,0);
-		} else {
-
-		}
-	}
-	prevdis = dis;
+aboutme.onmouseleave = function(event) {
+	isOn = false;
 }
-
-let throttleScroll = throttle(autoScroll, 1000);
 
 window.onscroll = function(event) {
-	throttleScroll(event, 'throttle');
+	scrollDis();
+	
+	if(dis < prevdis){
+		console.log('end');
+		aboutme.style.scrollSnapAlign = 'end';
+	}else if(dis > prevdis){
+		console.log('start');
+		aboutme.style.scrollSnapAlign = 'start';
+	}
+	prevdis = dis;
 }
