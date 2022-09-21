@@ -481,3 +481,19 @@ nav h3{
 .contents:hover .pageimg{
 	transform: scale(1.2);
 }
+
+footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	scroll-snap-align: start;
+	background-color: #020202;
+	color: white;
+	height: 40px; 
+}
+
+footer a p{
+	color: white;
+	text-decoration: underline;
+	margin: 0;
+}
