@@ -7,6 +7,7 @@
 	background-image: url('../img/UI.png');
 	background-position: center center;
 	background-size: 100%, 100%;
+	position: relative;
 }
 
 #aboutmewrap {
@@ -290,4 +291,12 @@
 
 #bigInfos{
 	margin-top: 4vh;
+}
+
+#downloadCV{
+	position: absolute;
+	top: 5px;
+	right: 20px;
+	color: #7eca03;
+	font-family: EVAUB;
 }
