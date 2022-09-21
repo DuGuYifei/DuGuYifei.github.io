@@ -3,13 +3,16 @@
 	background-color: rgba(25, 2, 2, 0.5);
 	display: flex;
 	overflow: hidden;
+	justify-content: center;
+	background-image: url('../img/UI.png');
+	background-position: center center;
+	background-size: 100%, 100%;
 }
 
 #aboutmewrap {
 	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	position: relative;
+	justify-content: center;
+	align-items: center;
 }
 
 .profilebgwrap {
@@ -17,8 +20,6 @@
 	padding-top: 5px;
 	padding-right: 3px;
 	padding-bottom: 5px;
-	margin-top: 5vw;
-	margin-left: 1vw;
 	border: 2px #733600 solid;
 	clip-path: polygon(0 15px, 15px 0, calc(100% - 15px) 0, 100% 15px, 100% calc(100% - 15px),
 			calc(100% - 15px) 100%, 15px 100%, 0 calc(100% - 15px));
@@ -26,8 +27,6 @@
 
 .profilebg {
 	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
 	padding-left: 2vw;
 	padding-right: 2vw;
 	padding-top: 5vw;
@@ -43,8 +42,6 @@
 		padding-top: 5px;
 		padding-right: 3px;
 		padding-bottom: 5px;
-		margin-left: 2vh;
-		margin-top: 2vh;
 	}
 
 	.profilebg {
@@ -112,12 +109,13 @@
 	display: flex;
 }
 
-#bigInfo {
+.bigInfo {
 	display: flex;
-	margin-top: 10px;
+	margin-top: 15px;
 }
 
 .cvbigtitle {
+	margin-bottom: 0;
 	padding-left: 5px;
 	padding-right: 5px;
 	width: 56px;
@@ -131,6 +129,7 @@
 }
 
 .cvbitcontent {
+	margin-bottom: 0;
 	margin-left: 3px;
 	font-family: EVAUB;
 	font-size: 16px;
@@ -162,17 +161,8 @@
 	margin-bottom: 2px;
 }
 
-#progresswrap {
-	position: absolute;
-	top: 800px;
-	left: 10vw;
-	width: 80vw;
-	height: 50px;
-}
-
-#progressbar {
-	height: 100%;
-	background-image: linear-gradient(135deg, #df0813 10%, rgba(0, 0, 0, 0) 0, #df0813 20%, rgba(0, 0, 0, 0) 0, #df0813 30%, rgba(0, 0, 0, 0) 0, #df0813 40%, rgba(0, 0, 0, 0) 0, #df0813 50%, rgba(0, 0, 0, 0) 0, #df0813 60%, rgba(0, 0, 0, 0) 0, #df0813 70%, rgba(0, 0, 0, 0) 0, #df0813 80%, rgba(0, 0, 0, 0) 0, #df0813 90%, rgba(0, 0, 0, 0) 0, #df0813 100%);
+#hiddeninfo{
+	margin-left: 2vw;
 }
 
 @media screen and (max-width:1020px) {
@@ -188,7 +178,7 @@
 }
 
 #addinfo {
-	font-size: 30px;
+	font-size: 26px;
 	line-height: 35px;
 	font-family: EVAUB;
 	color: #ffad00;
@@ -250,7 +240,7 @@
 
 .cvprojectlink {
 	font-size: 15px;
-	line-height: 16px;
+	line-height: 17px;
 	padding-left: 5px;
 	border-radius: 4px;
 }
@@ -266,13 +256,13 @@
 }
 
 
-.load{
+.load {
 	background: transparent;
 	position: relative;
 }
 
-.load::before{
-    content: '';
+.load::before {
+	content: '';
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -283,6 +273,21 @@
 	z-index: -1;
 }
 
-.load:hover::before{
+.load:hover::before {
 	width: 100%;
+}
+
+@media screen and (max-height: 500px) {
+	.hiddenschool{
+		display: none;
+	}
+}
+
+#otherinfo .cvcontent{
+	font-size: 18px;
+	line-height: 20px;
+}
+
+#bigInfos{
+	margin-top: 4vh;
 }
