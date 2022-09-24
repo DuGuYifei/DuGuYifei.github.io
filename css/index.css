@@ -78,7 +78,7 @@ body::before {
 
 nav{
 	display: none;
-	bottom: 19vh;
+	bottom: 20vh;
 	left: 7vw;
 	position: fixed;
 	font-size: 40px;
@@ -283,9 +283,16 @@ nav h3{
 	flex-direction: column;
 	align-items: center;
 	margin-left: 15vw;
-	margin-bottom: 22vh;
+	margin-bottom: 20vh;
 	margin-right: 15vw;
 }
+
+@media screen and (max-height: 500px) {
+	#shortInfo{
+		margin-bottom: 13vh;
+	}
+}
+
 
 @media screen and (max-width: 1080px) {
 	#shortInfo{
