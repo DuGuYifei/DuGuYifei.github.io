@@ -42,8 +42,16 @@
 	background-color: #e38c00;
 }
 
+#cypher{
+	background-color: #f0f016;
+}
+
 #java{
 	background-color: #b07219;
+}
+
+#springboot{
+	background-color: #e5b41e;
 }
 
 #unity{
@@ -54,6 +62,6 @@
 	background-color: #e16737;
 }
 
-#figma{
+#otherlang{
 	background-color: black;
 }
