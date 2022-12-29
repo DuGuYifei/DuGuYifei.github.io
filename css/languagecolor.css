@@ -46,12 +46,32 @@
 	background-color: #f0f016;
 }
 
+#neo4j{
+	background-color: #94c5f0;
+}
+
+#redis{
+	background-color: #dc382c;
+}
+
+#lua{
+	background-color: #00007c;
+}
+
 #mdx{
 	background-color: #0ddd9f;
 }
 
 #dax{
 	background-color: #01d1df;
+}
+
+#hive{
+	background-color: #dfd321;
+}
+
+#hadoop{
+	background-color: #faed26;
 }
 
 #java{
@@ -68,6 +88,10 @@
 
 #matlab{
 	background-color: #e16737;
+}
+
+#docker{
+	background-color: #1c90ed;
 }
 
 #otherlang{
