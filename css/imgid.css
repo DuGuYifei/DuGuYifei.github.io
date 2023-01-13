@@ -182,6 +182,10 @@
 	background-image: url('../img/gis_openlayers.jpg');
 }
 
+#gis_openlayerskml{
+	background-image: url('../img/gis_openlayerskml.jpg');
+}
+
 #crosswords{
 	background-image: url('../img/crosswords.jpg');
 }
