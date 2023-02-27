@@ -34,6 +34,10 @@
 	background-color: #42b883;
 }
 
+#indexeddb{
+	background-color: #de4a22;
+}
+
 #sh{
 	background-color: #89e051;
 }
@@ -42,8 +46,16 @@
 	background-color: #555555;
 }
 
+#qt{
+	background-color: #63aa34;
+}
+
 #tsql{
 	background-color: #e38c00;
+}
+
+#mysql{
+	background-color: #00648f;
 }
 
 #cypher{
