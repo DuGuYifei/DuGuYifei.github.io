@@ -39,7 +39,7 @@ features:
     link: https://project.liuyifei.tech
     linkText: Click tags -> Game -> See projects
   - title: Tools
-    details: • Docker, Git, Figma, Jira<br>• Chatgpt, Claude, Copilot, Deepseek<br>• Nginx, Caddy
+    details: <span style="display:grid; grid-template-columns:repeat(auto-fit, minmax(100px, 1fr)); gap:8px;"><img src="https://img.shields.io/badge/-Docker-dadce0?logo=Docker" alt="Docker"><img src="https://img.shields.io/badge/-Figma-purple?logo=figma" alt="Figma"><img src="https://img.shields.io/badge/-Git-603229?logo=git" alt="Git"><img src="https://img.shields.io/badge/-Claude-gray?logo=Claude" alt="Claude"><img src="https://img.shields.io/badge/-DeepSeek-8ab0f2?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAMFBMVEVHcExNa/5Na/5Na/5Na/5Na/5Na/5Na/5Na/5Na/5Na/5Na/5Na/5Na/5Na/5Na/5glKuKAAAAD3RSTlMA05QmPhvxp+O+dGJWhBD9rd47AAAA0UlEQVQokcWR2RbDIAhEARXXhP//26IYY9o+9pzOQ9C5LkwE+K9CiaTllIfrCJkRReTUWRMyu/VPlKU+rVodOJ+TTvBmwg7Aa83djAAkD3kAXsMg8k6dDehj46LZ9xvZO3+knVIRqaNfSaN4wxGKLWgGr8jjfMRJw/BYM5m6yzKjmYVywL6XzmgRp7N+493WPE3bXltX5nw5ONeFee1941zeqaDivB96vYLGOkby3moO8KSJejfxtPdLG/W82hRslPMBu8rEXOCbQqu1ha/o13oBhAwQQ4gEzPgAAAAASUVORK5CYII=" alt="DeepSeek"><img src="https://img.shields.io/badge/-ChatGPT-gray?logo=OPenAI" alt="ChatGPT"><img src="https://img.shields.io/badge/-Copilot-4f42c6?logo=github" alt="Copilot"><img src="https://img.shields.io/badge/-Nginx-099543?logo=Nginx" alt="Nginx"><img src="https://img.shields.io/badge/-Caddy-d6ecda?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAYFBMVEVHcEwarWcAkN0AkN0AkN0AkN0AkN0AkN4AkN0AkN4AkN4AkN0AkN0AkN0AkN0itjgitjgitjYitjgitjYAkN0itjgAkN0itjgitjgitzAitjgitjgAkN4itzEitjgjuR/NDNU1AAAAIHRSTlMACkWa2v9x9IxaNuoiEMgZQer/nn94qCp0UrnEt2HXM67wCgwAAAFsSURBVHgBldPRcoMgFATQFVkViKbeUFONaf//L+uFyoSZ9qHnLbDA3nGCWoO/mdZS2dbgF12ve4Pz3g2BbYPaJZAcxvJz4oBXjuSUD12RGIax3k8n3mYRuUGN5AXIPMmIw7tkZ8INDorkgsP92PtYN5FHOccAIJI91LGlPW4i11yDMTCmCzzULFuqKbLiMDDCcIcnd+RA7teIPHP1YHTcLtWtAyug66rBQgt1X2d5rM/DMemKwAkxhAaY8ohPqczOpv7QQKr4KbUvpIDXQJMDG5rTl8hbHsQBC3EGinsOYGenbf8O9NrPn088dPYqMJK6QIPD+lzhLdvXQGQaYF8wLn2/+50M1Q0k81czzNgju6ZAR05QtuzjtiUPDTRkfl2TO9CSLWY5XWHLi0v+XKTF9vlj1VV6JG26akwvFro/INOOzgQyophILjjZeobUqpwv+fLHMW1Ke7zyMZox6joT6/CrS9fu0z64Ef/wDWurGHYkk76+AAAAAElFTkSuQmCC" alt="Caddy"><img src="https://img.shields.io/badge/-Jira-2684ff?logo=Jira" alt="Jira"></span>
   - title: Hobbies
     details: Billiards 🎱, Latin Dancing 💃，Games🎮
   - title: Every pursuit begins with a spark, and is shaped by persistence.
@@ -382,6 +382,7 @@ html.dark .timeline-date {
 #projects .projects-container {
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 #projects .header {
   text-align: center;
@@ -623,13 +624,13 @@ html.dark .timeline-date {
 }
 #projects .decoration-tl {
   top: 40px;
-  left: 40px;
+  left: 0px;
   border-top: 3px solid var(--border-color);
   border-left: 3px solid var(--border-color);
 }
 #projects .decoration-tr {
   top: 40px;
-  right: 40px;
+  right: 0px;
   border-top: 3px solid var(--border-color);
   border-right: 3px solid var(--border-color);
 }
@@ -691,15 +692,13 @@ html.dark .timeline-date {
     <!-- 装饰元素 -->
     <div class="decoration decoration-tl"></div>
     <div class="decoration decoration-tr"></div>
-    <div class="decoration decoration-dot-l"></div>
-    <div class="decoration decoration-dot-r"></div>
     <!-- 头部 -->
     <header class="header">
-      <h1>我的项目</h1>
+      <h1>My Projects</h1>
     </header>
     <!-- 滑动提示 -->
     <div class="scroll-hint">
-      左右滑动查看更多
+      Scroll left/right to see more
       <div class="scroll-hint-icon"></div>
     </div>
     <!-- 项目轮播 -->
