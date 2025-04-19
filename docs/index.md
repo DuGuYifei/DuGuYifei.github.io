@@ -285,7 +285,7 @@ html.dark .timeline-date {
           <a href="https://pg.edu.pl/en/admission/bachelor-studies-international-students/study-programs-english/bachelor-science-data-engineering" target="blank"><img src="/exp/pg-logo.png" alt="PG Logo"></a>
         </div>
         <a href="https://pg.edu.pl/en/admission/bachelor-studies-international-students/study-programs-english/bachelor-science-data-engineering" target="blank" style="color: inherit;"><div class="job-title">Gdansk University of Technology</div></a>
-        <div class="company-name">Data Engineering</div>
+        <div class="company-name">Data Engineering<br><small style="font-size: 0.8em;">Graduate's Gold Badge</small></div>
       </div>
     </div>
   </div>
