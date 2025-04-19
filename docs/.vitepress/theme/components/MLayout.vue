@@ -72,7 +72,12 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
     <template #nav-bar-title-after>
       <MNavVisitor />
     </template>
-
+    <!-- 包裹主要内容，让 .snap-page 能生效 -->
+    <template #doc-before>
+      <div class="snap-container">
+        <Content />
+      </div>
+    </template>
     <template v-if="comment && frontmatter.comment !== false" #doc-footer-before>
       <div class="doc-comments">
         <Giscus

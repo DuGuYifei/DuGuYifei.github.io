@@ -11,8 +11,8 @@ export default defineConfig({
   base: APP_BASE_PATH ? `/${APP_BASE_PATH}/` : '/',
 
   lang: 'zh-CN',
-  title: 'DuGuYifei - About Me',
-  description: 'Yifei Liu 的个人网站',
+  title: 'Liu Yifei - About Me',
+  description: 'Liu Yifei 的个人网站',
   head,
 
   lastUpdated: true,
