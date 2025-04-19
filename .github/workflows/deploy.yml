@@ -65,3 +65,5 @@ jobs:
           publish_branch: gh-pages
           # 静态文件所在目录
           publish_dir: dist
+      - name: Add CNAME
+        run: echo 'about.liuyifei.tech' > dist/CNAME
