@@ -55,6 +55,9 @@ jobs:
           APP_BASE_PATH: /${{ github.repository }}
         run: pnpm install && pnpm run build
 
+      - name: Add CNAME
+        run: echo 'about.liuyifei.tech' > dist/CNAME
+        
       # 部署
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
@@ -65,5 +68,4 @@ jobs:
           publish_branch: gh-pages
           # 静态文件所在目录
           publish_dir: dist
-      - name: Add CNAME
-        run: echo 'about.liuyifei.tech' > dist/CNAME
+
