@@ -329,6 +329,584 @@ html.dark .timeline-date {
     </div>
   </div>
 </div>
-<div id="projects">
 
+<style>
+:root {
+  --primary-bg: #f5f5f5;
+  --card-bg: #ffffff;
+  --text-color: #333333;
+  --secondary-text: #666666;
+  --border-color: #dddddd;
+  --accent-color: #333333;
+  /* 标签颜色 */
+  --tag-other-bg: #eef2ff;
+  --tag-other-text: #4b5eac;
+  --tag-vue-bg: #ecfdf5;
+  --tag-vue-text: #047857;
+  --tag-python-bg: #fef2f2;
+  --tag-python-text: #b91c1c;
+  --tag-sql-bg: #f0f9ff;
+  --tag-sql-text: #0369a1;
+  --tag-spring-bg: #fff7ed;
+  --tag-spring-text: #c2410c;
+  --tag-go-bg: #fdf4ff;
+  --tag-go-text: #a21caf;
+}
+.dark {
+  --primary-bg: #121212;
+  --card-bg: #1e1e1e;
+  --text-color: #ffffff;
+  --secondary-text: #bbbbbb;
+  --border-color: #444444;
+  --accent-color: #ffffff;
+  /* 暗色模式下的标签颜色 - 稍微调暗 */
+  --tag-other-bg: #172554;
+  --tag-other-text: #93c5fd;
+  --tag-vue-bg: #064e3b;
+  --tag-vue-text: #6ee7b7;
+  --tag-python-bg: #450a0a;
+  --tag-python-text: #fca5a5;
+  --tag-sql-bg: #0c4a6e;
+  --tag-sql-text: #7dd3fc;
+  --tag-spring-bg: #431407;
+  --tag-spring-text: #fdba74;
+  --tag-go-bg: #4a044e;
+  --tag-go-text: #e9d5ff;
+}
+#projects * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+#projects .projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#projects .header {
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+#projects .header h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+#projects .header h1::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background-color: var(--accent-color);
+}
+#projects .scroll-hint {
+  text-align: right;
+  margin-right: 60px;
+  color: var(--secondary-text);
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+}
+#projects .scroll-hint-icon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+#projects .scroll-hint-icon::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid var(--secondary-text);
+  border-bottom: 2px solid var(--secondary-text);
+  transform: rotate(-45deg);
+  right: 6px;
+  top: 6px;
+}
+#projects .carousel-container {
+  position: relative;
+  overflow: hidden;
+  padding: 10px 0;
+}
+#projects .carousel {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease;
+  padding: 10px 50px;
+}
+#projects .project-card {
+  flex: 0 0 300px;
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  height: 400px;
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#projects .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+#projects .project-image {
+  width: 100%;
+  height: 150px;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#projects .project-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+#projects .project-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+#projects .project-description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--secondary-text);
+  margin-bottom: 15px;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex-grow: 1;
+}
+#projects .project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  position: absolute;
+  bottom: 20px;
+}
+#projects .tag {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+}
+#projects .tag-other {
+  background-color: var(--tag-other-bg);
+  color: var(--tag-other-text);
+}
+#projects .tag-vue {
+  background-color: var(--tag-vue-bg);
+  color: var(--tag-vue-text);
+}
+#projects .tag-python {
+  background-color: var(--tag-python-bg);
+  color: var(--tag-python-text);
+}
+#projects .tag-sql {
+  background-color: var(--tag-sql-bg);
+  color: var(--tag-sql-text);
+}
+#projects .tag-spring {
+  background-color: var(--tag-spring-bg);
+  color: var(--tag-spring-text);
+}
+#projects .tag-go {
+  background-color: var(--tag-go-bg);
+  color: var(--tag-go-text);
+}
+#projects .nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  transition: all 0.3s;
+}
+#projects .nav-button:hover {
+  background-color: var(--text-color);
+  color: var(--card-bg);
+}
+#projects .nav-button.prev {
+  left: 10px;
+}
+#projects .nav-button.next {
+  right: 10px;
+}
+#projects .nav-button::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  display: block;
+}
+#projects .nav-button.prev::before {
+  transform: rotate(-135deg);
+  margin-left: 4px;
+}
+#projects .nav-button.next::before {
+  transform: rotate(45deg);
+  margin-right: 4px;
+}
+#projects .dots-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 25px 0;
+}
+#projects .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--border-color);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#projects .dot.active {
+  background-color: var(--accent-color);
+}
+#projects .view-all-btn {
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin: 20px auto 40px;
+  border-radius: 25px;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 2px solid var(--accent-color);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: center;
+  line-height: 46px;
+  text-decoration: none;
+}
+#projects .view-all-btn:hover {
+  background-color: var(--accent-color);
+  color: var(--card-bg);
+}
+/* 装饰元素 */
+#projects .decoration {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+}
+#projects .decoration-tl {
+  top: 40px;
+  left: 40px;
+  border-top: 3px solid var(--border-color);
+  border-left: 3px solid var(--border-color);
+}
+#projects .decoration-tr {
+  top: 40px;
+  right: 40px;
+  border-top: 3px solid var(--border-color);
+  border-right: 3px solid var(--border-color);
+}
+#projects .decoration-dot-l {
+  top: 100px;
+  left: 40px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+#projects .decoration-dot-r {
+  top: 100px;
+  right: 40px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .carousel {
+    padding: 10px 30px;
+  }
+  .project-card {
+    flex: 0 0 260px;
+    height: 330px;
+    padding: 15px;
+  }
+  .scroll-hint {
+    margin-right: 30px;
+  }
+  .decoration {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .carousel {
+    padding: 10px 20px;
+  }
+  .project-card {
+    flex: 0 0 220px;
+    height: 320px;
+    padding: 12px;
+  }
+  .project-image {
+    height: 120px;
+  }
+  .theme-toggle {
+    top: 10px;
+    right: 10px;
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
+</style>
+<div id="projects">
+  <div class="projects-container">
+    <!-- 装饰元素 -->
+    <div class="decoration decoration-tl"></div>
+    <div class="decoration decoration-tr"></div>
+    <div class="decoration decoration-dot-l"></div>
+    <div class="decoration decoration-dot-r"></div>
+    <!-- 头部 -->
+    <header class="header">
+      <h1>我的项目</h1>
+    </header>
+    <!-- 滑动提示 -->
+    <div class="scroll-hint">
+      左右滑动查看更多
+      <div class="scroll-hint-icon"></div>
+    </div>
+    <!-- 项目轮播 -->
+    <div class="carousel-container">
+      <div class="carousel" id="projectCarousel">
+        <!-- 项目卡片 1 -->
+        <div class="project-card">
+          <a href="https://project.liuyifei.tech/posts/Fullstack-BigData-App-Pokemoney/" target="_blank" class="no-link-style" style="text-decoration: none;">
+            <div class="project-image">
+              <img src="/projects/pokemoney.png" alt="项目一">
+            </div>
+            <h3 class="project-title">Pokemoney</h3>
+            <p class="project-description">Pokemoney is a personal finance app supporting off/online modes with multi-device synchronization. Built with a modern lakehouse architecture backend stack and Flutter + SQLite on the frontend.</p>
+            <div class="project-tags">
+              <span class="tag tag-spring">Microservices</span>
+              <span class="tag tag-sql">BigDataPlatform</span>
+            </div>
+          </a>
+        </div>
+        <!-- 项目卡片 2 -->
+        <div class="project-card">
+          <a href="https://project.liuyifei.tech/posts/%E5%95%86%E5%8D%95-Fullstack-%E5%9C%A8%E7%BA%BF%E5%9B%BE%E4%B9%A6%E9%A6%86%E8%AF%BE%E5%85%83Library/" target="_blank" class="no-link-style" style="text-decoration: none;">
+            <div class="project-image">
+              <img src="/projects/keyuan.png" alt="项目二">
+            </div>
+            <h3 class="project-title">Keyuan Library</h3>
+            <p class="project-description">Developed a fullstack online library system using Spring Boot, Vue, Solr, and MySQL with search, access control, and reading features.</p>
+            <div class="project-tags">
+              <span class="tag tag-spring">SpringBoot</span>
+              <span class="tag tag-vue">Vue</span>
+              <span class="tag tag-sql">Solr</span>
+            </div>
+          </a>
+        </div>
+        <!-- 项目卡片 3 -->
+        <div class="project-card">
+          <a href="https://project.liuyifei.tech/posts/Unity-CatalysmCards_DOTS/" target="_blank" class="no-link-style" style="text-decoration: none;">
+            <div class="project-image">
+              <img src="/projects/catalysm.png" alt="项目三">
+            </div>
+            <h3 class="project-title">Catalysm Cards</h3>
+            <p class="project-description">Developed a real-time card battle game in Unity using DOTS, featuring elemental interactions, combo magic, three levels, and a boss fight.</p>
+            <div class="project-tags">
+              <span class="tag tag-other">Unity</span>
+              <span class="tag tag-other">DOTS</span>
+            </div>
+          </a>
+        </div>
+        <!-- 项目卡片 4 -->
+        <div class="project-card">
+          <a href="https://project.liuyifei.tech/posts/Internship-Python-AIHeadhunter/" target="_blank" class="no-link-style" style="text-decoration: none;">
+            <div class="project-image">
+              <img src="/projects/headhunter.png" alt="项目四">
+            </div>
+            <h3 class="project-title">AI Headhunter</h3>
+            <p class="project-description">Built an AI headhunting system in Python with resume parsing, filtering, chatbot, and automation — streamlining the entire recruitment pipeline.</p>
+            <div class="project-tags">
+              <span class="tag tag-python">Python</span>
+              <span class="tag tag-other">Selenium</span>
+            </div>
+          </a>
+        </div>
+        <!-- 项目卡片 5 -->
+        <div class="project-card">
+          <a href="https://project.liuyifei.tech/posts/Internship-Go-AIWeChatService%E5%BE%AE%E4%BF%A1AI%E6%9C%8D%E5%8A%A1/" target="_blank" class="no-link-style" style="text-decoration: none;">
+            <div class="project-image">
+              <img src="/projects/wechat.jpg" alt="项目五">
+            </div>
+            <h3 class="project-title">AI WeChat Service</h3>
+            <p class="project-description">Developed a Go-based AI WeChat service integrating LLMs, featuring automated messaging, user command controls, and heartbeat monitoring.</p>
+            <div class="project-tags">
+              <span class="tag tag-go">Go</span>
+              <span class="tag tag-other">ReverseEngineer</span>
+            </div>
+          </a>
+        </div>
+        <!-- 项目卡片 6 -->
+        <div class="project-card">
+          <a href="https://project.liuyifei.tech/posts/%E5%95%86%E5%8D%95-Fullstack-%E6%A8%A1%E6%8B%9F%E8%80%83%E8%AF%95%E7%B3%BB%E7%BB%9FSimulateExam/" target="_blank" class="no-link-style" style="text-decoration: none;">
+            <div class="project-image">
+              <img src="/projects/exam.png" alt="项目六">
+            </div>
+            <h3 class="project-title">Simulation Exam System</h3>
+            <p class="project-description">Developed a full-stack simulated exam system using Spring Boot and Vue, featuring WeChat scan qr code to login, random question generation, and exam management.</p>
+            <div class="project-tags">
+              <span class="tag tag-spring">SpringBoot</span>
+              <span class="tag tag-vue">Vue</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- 导航按钮 -->
+      <button class="nav-button prev" id="prevBtn"></button>
+      <button class="nav-button next" id="nextBtn"></button>
+    </div>
+    <!-- 指示点 -->
+    <div class="dots-container" id="dotsContainer"></div>
+    <!-- 查看全部按钮 -->
+    <a href="https://project.liuyifei.tech" class="view-all-btn" target="blank">查看全部项目</a>
+  </div>
 </div>
+
+<script setup>
+  import { onMounted } from 'vue';
+  onMounted(() => {
+    const carousel = document.getElementById('projectCarousel');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const dotsContainer = document.getElementById('dotsContainer');
+    let currentIndex = 0;
+    let cards = carousel.children;
+    let totalCards = cards.length;
+    let cardWidth = cards[0].offsetWidth + 20; // 卡片宽度 + 间距
+    let cardsPerView = Math.floor((carousel.offsetWidth - 100) / cardWidth); // 减去左右padding
+    if (cardsPerView < 1) cardsPerView = 1;
+    let maxIndex = totalCards - cardsPerView;
+    // 初始状态可能显示多张卡片
+    updateCarouselSize();
+    // 创建指示点
+    function createDots() {
+      dotsContainer.innerHTML = '';
+      for (let i = 0; i <= maxIndex; i++) {
+        const dot = document.createElement('div');
+        dot.classList.add('dot');
+        if (i === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => {
+          goToSlide(i);
+        });
+        dotsContainer.appendChild(dot);
+      }
+    }
+    createDots();
+    // 更新轮播尺寸
+    function updateCarouselSize() {
+      cardWidth = cards[0].offsetWidth + 20; // 重新计算卡片宽度
+      cardsPerView = Math.floor((carousel.parentElement.offsetWidth - 100) / cardWidth);
+      if (cardsPerView < 1) cardsPerView = 1;
+      maxIndex = totalCards - cardsPerView;
+      if (maxIndex < 0) maxIndex = 0;
+      // 确保当前索引不超过最大值
+      if (currentIndex > maxIndex) {
+        currentIndex = maxIndex;
+        updateCarousel();
+      }
+      createDots(); // 重新创建点
+      updateActiveDot();
+    }
+    // 导航到指定幻灯片
+    function goToSlide(index) {
+      if (index < 0) {
+        index = 0;
+      } else if (index > maxIndex) {
+        index = maxIndex;
+      }
+      currentIndex = index;
+      updateCarousel();
+    }
+    // 更新轮播位置
+    function updateCarousel() {
+      carousel.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+      updateActiveDot();
+    }
+    // 更新活动指示点
+    function updateActiveDot() {
+      const dots = dotsContainer.querySelectorAll('.dot');
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentIndex);
+      });
+    }
+    // 按钮事件
+    prevBtn.addEventListener('click', () => {
+      goToSlide(currentIndex - 1);
+    });
+    nextBtn.addEventListener('click', () => {
+      goToSlide(currentIndex + 1);
+    });
+    // 触摸滑动支持
+    let touchStartX = 0;
+    let touchEndX = 0;
+    carousel.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+    carousel.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe();
+    }, { passive: true });
+    function handleSwipe() {
+      const swipeThreshold = 50;
+      if (touchStartX - touchEndX > swipeThreshold) {
+        // 向左滑动
+        goToSlide(currentIndex + 1);
+      } else if (touchEndX - touchStartX > swipeThreshold) {
+        // 向右滑动
+        goToSlide(currentIndex - 1);
+      }
+    }
+    // 键盘导航
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') {
+        goToSlide(currentIndex - 1);
+      } else if (e.key === 'ArrowRight') {
+        goToSlide(currentIndex + 1);
+      }
+    });
+    // 窗口大小变化时调整
+    window.addEventListener('resize', () => {
+      updateCarouselSize();
+    });
+  });
+</script>
