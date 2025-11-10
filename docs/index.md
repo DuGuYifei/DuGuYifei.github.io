@@ -25,7 +25,7 @@ hero:
 features:
   - icon: 🖥️
     title: Backend DevOps
-    details: • Spring Cloud series Or Alibaba series.<br>• Spring Boot, Go, Flask<br>• Backend with different databses or Solr<br>• DevOps with Docker, CI/CD, kubernetes, ansible, terraform<br>• RESTful, GraphQL, Dubbo-Triple, gRPC
+    details: • Spring Cloud series Or Alibaba series.<br>• Spring Boot, Go, Flask<br>• Backend with different databses or Solr<br>• DevOps with Docker, kubernetes, CI/CD, Nginx, Traefik, Ansible, Terraform<br>• RESTful, GraphQL, Dubbo-Triple, gRPC
     link: https://project.liuyifei.tech
     linkText: Click categories -> Backend -> See projects
   - icon: 📊
