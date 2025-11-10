@@ -334,7 +334,8 @@ html.dark .timeline-date {
         <div class="company-logo">
           <a href="https://www.check24.de/" target="blank"><img src="/exp/check24.png" alt="Check24 Logo"></a>
         </div>
-        <div class="job-title">Full Stack - Backlog Team -> Rewriting Team</div>
+        <div class="job-title">Full Stack</div>
+        <div>Task Force Team & Backlog Team -> Rewriting Team</div>
         <a href="https://www.check24.de/" target="blank" style="color: inherit;">
           <div class="company-name">
             Check24
