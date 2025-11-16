@@ -4,11 +4,17 @@ import MarkdownPreview from 'vite-plugin-markdown-preview'
 
 import { head, nav, sidebar } from './configs'
 
+// 仓库名（例如：DuGuYifei.github.io）
 const APP_BASE_PATH = basename(process.env.GITHUB_REPOSITORY || '')
+
+// 如果仓库名以 .github.io 结尾（user/organization page），使用根路径 '/'
+// 否则（project page）使用 '/<repoName>/' 作为 base
+const isUserPage = APP_BASE_PATH.endsWith('.github.io')
+const BASE = isUserPage ? '/' : (APP_BASE_PATH ? `/${APP_BASE_PATH}/` : '/')
 
 export default defineConfig({
   outDir: '../dist',
-  base: APP_BASE_PATH ? `/${APP_BASE_PATH}/` : '/',
+  base: BASE,
 
   lang: 'zh-CN',
   title: 'Liu Yifei - About Me',
