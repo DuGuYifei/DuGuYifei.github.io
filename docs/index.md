@@ -1,4 +1,4 @@
----
+﻿---
 layout: home
 layoutClass: 'm-home-layout'
 
@@ -35,7 +35,7 @@ features:
     linkText: One complex project example
   - icon: 🎮
     title: Games Engineering
-    details: • Unity, UE, Godot<br>• Learn IT & Games Engineering in TUM<br>• Led a team of 3/4 in semester-long Game Jam-style projects.
+    details: • Unity, UE, Godot<br>• Learn IT & Games Engineering in TUM<br>• Led teams of 3 or 4 in semester-long Game-Jam-style projects.
     link: https://project.liuyifei.tech
     linkText: Click tags -> Game -> See projects
   - title: Tools
@@ -294,27 +294,45 @@ html.dark .timeline-date {
   <h3 class="section-title">Work Experience</h3>
   <div class="timeline-container">
     <div class="center-line"></div>    
-    <!-- Item 1 - Left side -->
-    <div class="timeline-item timeline-left">
+     <div class="timeline-item timeline-right">
       <div class="timeline-dot"></div>
-      <div class="timeline-date">MAY 2023 – APR 2025</div>
+      <div class="timeline-date">OCT 2025 – Present</div>
       <div class="timeline-content">
         <div class="company-logo">
-          <a href="https://anyhelper.net/" target="blank"><img src="/exp/anyhelper.png" alt="Anyhelper Logo"></a>
+          <a href="https://www.check24.de/" target="blank"><img src="/exp/check24.png" alt="Check24 Logo"></a>
         </div>
-        <div class="job-title">Full Stack Developer</div>
-        <a href="https://anyhelper.net/" target="blank" style="color: inherit;">
+        <div class="job-title">Full-Stack with DevOps & Infrastructure</div>
+        <div>Rewriting Team</div>
+        <a href="https://www.check24.de/" target="blank" style="color: inherit;">
           <div class="company-name">
-            Anyhelper
-            <a href="https://www.linkedin.com/company/anyhelper/" style="display: inline-block; vertical-align: middle; margin-left: 5px;" target="_blank" rel="noopener noreferrer">
+            Check24
+            <a href="https://www.linkedin.com/company/check24-vergleichsportal-gmbh/" style="display: inline-block; vertical-align: middle; margin-left: 5px;" target="_blank" rel="noopener noreferrer">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path></svg>
             </a>
           </div>
         </a>
       </div>
     </div>
-    <!-- Item 2 - Right side -->
-    <div class="timeline-item timeline-right">
+    <div class="timeline-item timeline-left">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">MAY 2025 – OCT 2025</div>
+      <div class="timeline-content">
+        <div class="company-logo">
+          <a href="https://www.check24.de/" target="blank"><img src="/exp/check24.png" alt="Check24 Logo"></a>
+        </div>
+        <div class="job-title">Full Stack</div>
+        <div>Task Force Team & Backlog Team</div>
+        <a href="https://www.check24.de/" target="blank" style="color: inherit;">
+          <div class="company-name">
+            Check24
+            <a href="https://www.linkedin.com/company/check24-vergleichsportal-gmbh/" style="display: inline-block; vertical-align: middle; margin-left: 5px;" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path></svg>
+            </a>
+          </div>
+        </a>
+      </div>
+    </div>
+        <div class="timeline-item timeline-right">
       <div class="timeline-dot"></div>
       <div class="timeline-date">JUL 2023 – APR 2024</div>
       <div class="timeline-content">
@@ -327,19 +345,18 @@ html.dark .timeline-date {
         </a>
       </div>
     </div>
-    <div class="timeline-item timeline-left">
+        <div class="timeline-item timeline-left">
       <div class="timeline-dot"></div>
-      <div class="timeline-date">MAY 2025 – Present</div>
+      <div class="timeline-date">MAY 2023 – APR 2025</div>
       <div class="timeline-content">
         <div class="company-logo">
-          <a href="https://www.check24.de/" target="blank"><img src="/exp/check24.png" alt="Check24 Logo"></a>
+          <a href="https://anyhelper.net/" target="blank"><img src="/exp/anyhelper.png" alt="Anyhelper Logo"></a>
         </div>
-        <div class="job-title">Full Stack</div>
-        <div>Task Force Team & Backlog Team -> Rewriting Team</div>
-        <a href="https://www.check24.de/" target="blank" style="color: inherit;">
+        <div class="job-title">Full Stack Developer</div>
+        <a href="https://anyhelper.net/" target="blank" style="color: inherit;">
           <div class="company-name">
-            Check24
-            <a href="https://www.linkedin.com/company/check24-vergleichsportal-gmbh/" style="display: inline-block; vertical-align: middle; margin-left: 5px;" target="_blank" rel="noopener noreferrer">
+            Anyhelper
+            <a href="https://www.linkedin.com/company/anyhelper/" style="display: inline-block; vertical-align: middle; margin-left: 5px;" target="_blank" rel="noopener noreferrer">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path></svg>
             </a>
           </div>
