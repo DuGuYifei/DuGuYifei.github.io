@@ -9,8 +9,8 @@ export const nav: DefaultTheme.Config['nav'] = [
   },
   {
     text: 'CV', items: [
-      { text: '中文', link: '/CV_20260406_zh.pdf' },
-      { text: 'English', link: '/CV_20260406_en.pdf' }
+      { text: '中文', link: '/CV_20260512_zh.pdf' },
+      { text: 'English', link: '/CV_20260512_en.pdf' }
     ]
   }
 ]
