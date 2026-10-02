@@ -5,7 +5,7 @@ layoutClass: 'm-home-layout'
 hero:
   name: Yifei Liu
   text: <small>Call me Tobi if easier :)</small>
-  tagline: •&nbsp;&nbsp;&nbsp;&nbsp;M.Sc. IT & Games Engineering<small style="font-size:0.5em;"> (<a href="https://www.tum.de/" target="blank"><img src="https://th.bing.com/th/id/ODLS.e6582a02-3033-4dc7-89d3-f2e681be49df?w=32&amp;h=32&amp;qlt=90&amp;pcl=fffffa&amp;o=6&amp;pid=1.2" style="vertical-align:middle;display:inline-block" height="28" width="28" alt="全球 Web 图标" class="rms_img" data-bm="44"></a> In Progress)</small><br>•&nbsp;&nbsp;&nbsp;&nbsp;B.Sc. Data Engineering<br>•&nbsp;&nbsp;&nbsp;&nbsp;B.Mgt.
+  tagline: •&nbsp;&nbsp;&nbsp;&nbsp;M.Sc. IT & Games Engineering<small style="font-size:0.5em;"> (<a href="https://www.tum.de/" target="blank"><img src="https://th.bing.com/th/id/ODLS.e6582a02-3033-4dc7-89d3-f2e681be49df?w=32&amp;h=32&amp;qlt=90&amp;pcl=fffffa&amp;o=6&amp;pid=1.2" style="vertical-align:middle;display:inline-block" height="28" width="28" alt="全球 Web 图标" class="rms_img" data-bm="44"></a> Graduated)</small><br>•&nbsp;&nbsp;&nbsp;&nbsp;B.Sc. Data Engineering<br>•&nbsp;&nbsp;&nbsp;&nbsp;B.Mgt.
   image:
     src: /logo.png
     alt: DuGuYife
@@ -24,15 +24,15 @@ hero:
       link: https://leetcode.cn/u/duguyifei/
 features:
   - icon: 🖥️
-    title: Backend DevOps
-    details: • Spring Cloud series Or Alibaba series.<br>• Spring Boot, Go, Flask<br>• Backend with different databses or Solr<br>• DevOps with Docker, kubernetes, CI/CD, Nginx, Traefik, Ansible, Terraform<br>• RESTful, GraphQL, Dubbo-Triple, gRPC
+    title: Full Stack & DevOps
+    details: '• Backend: Java (Spring), Go (Kitex), Python<br>• DevOps: Docker, Kubernetes, CI/CD, Infrastructure, Cloud<br>• Frontend: Vue, Lynx<br>• Mobile: iOS / Android<br>• Data: SQL / NoSQL, Big Data, Lakehouse'
     link: https://project.liuyifei.tech
-    linkText: Click categories -> Backend -> See projects
-  - icon: 📊
-    title: Data Engineering
-    details: • SQL & NoSQL Database<br>• Data Warehouse：SSAS<br>• Big Data Platform & Tools<br>• shard, partition, replica, cluster, R/W split<br>• SQL, Python, Java
-    link: https://project.liuyifei.tech/posts/Fullstack-BigData-App-Pokemoney/
-    linkText: One complex project example
+    linkText: Click categories → FullStack → See projects
+  - icon: 🧠
+    title: AI (Algorithm + Agent)
+    details: '• Graduate Coursework: I2DL, ML, NLP, Advanced NLP, Advanced DL with Physics<br>• Research: Test-Time Training in PDE-Transformer<br>• Agent Development'
+    link: https://github.com/DuGuYifei/pde-transformer-ttt
+    linkText: PDE-TTT
   - icon: 🎮
     title: Games Engineering
     details: • Unity, UE, Godot<br>• Learn IT & Games Engineering in TUM<br>• Led teams of 3 or 4 in semester-long Game-Jam-style projects.
@@ -41,7 +41,7 @@ features:
   - title: Tools
     details: <span style="display:grid; grid-template-columns:repeat(auto-fit, minmax(100px, 1fr)); gap:8px;"><img src="https://img.shields.io/badge/-Figma-purple?logo=figma" alt="Figma"><img src="https://img.shields.io/badge/-Git-603229?logo=git" alt="Git"><img src="https://img.shields.io/badge/-Atlassian-2684ff?logo=Atlassian" alt="Atlassian"><img src="https://img.shields.io/badge/-ChatGPT-f7f7f7?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACRElEQVRYhe3WS4iOURgH8J/raEqhmJSVy5iSWbiklIUViyk2LospSSZsLBSRbFiZDQvGihRCxoShRNm4pJFyv5SQUhZCiJI+i/N8zfH6Rr7PJ5v5b85z/ud5zvN/zznPeQ+DGMR/xpAaYtqwEk14ii7cr6eogdCA1yjhCo7gcfRPYSbWoR3j/oWAr7hRge8MESV8yexL9Uy+HZ8LXAteRbIdhbHZ+IQP9UjeFJNtiP4o9ETic9LWlDGsEFvCvr9Jflz/ki4I7g7eSitQRivehN/OjF8bXE04G8FTCgIeSVtCWo2yXw9WZYIXozHssdUmn5slVxDwIARsyZKdLsTvCf5JtCOrFXDMzyc+F3ArS7wUS7J+WxYzBleDn1GtgPtSeeUC5od9F70VYs6E30NMyvgDfnMOhg7Av8OEAteaxfRViLmFF3gmlef+4NdFu3kgEZWwyc+qy3t6OZIU615wD8NuL8QfwrVqBIgJDmb9iVIJlnC+gv8F3At7TkFApxr+F80xSR/GZ/wifIux5Vih/xDeDp95BQE3cbRaAQ0xyaNouwrj3VnijdgavkUB08KeVa2AMRHYiIX6v7pDWu6SdFOWr99t0t8xF9ASbXe1ycsoYU3WL18+zzE141vxXjojuYASDteaHPb6/V3eiIvhcwIjgu/AR3V6F7yV3gLzC/yuSPwMkwtjn6QtqRt69S/p98zeXcG3z69vh7pgNJZhNaZLZVU+DydxPfovMfxPJ63lUZqjGeulUnsjVUVdn2KDGMQ/xw/hZKtMGA891gAAAABJRU5ErkJggg==" alt="ChatGPT"><img src="https://img.shields.io/badge/-Gemini-f3f5f6?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAACbElEQVR4AWJwL/ChKyZL0y9XpzJAr/UAG0sYhWE4xrVt27Zt27Zt1ba7Rm27vbZt226/9sxmNtN1MZvkTSZ8cs7op8wG/ho58iVlFvDzuKn1f44ciQ8TZoCu+QZpOsGXsRPxasYCXFu4R8gr+MG+WyUWu71wKzLXOGCFxKMSb+DXCRNPcjHldgWc9p88yQv4efnw1ZqY495M7Dp2G5Mtvq8uVfDLnPG99GFLLF9hivUXDLL536tUwM8rR/Z6vWYGbu1cg8x9FirsUEYhbLjVH8ok1OgaXx4epsbkx4RwsEjTwvpZ5LIZXa/ep/GzdYdThF23n4YUp20QeVnDxikW2x2u6MS6W6rqcgLoegInO1ugklHwW0KD+r/E9YTvA1uCui4YiDTlBAaz8BdihV8WFrjdU2OakGadT0BQUH0t8G9SlR1/46u9/BpTH2wPktsymF/MAlgEH8JyhQqc6HUf/Zw+oZftT4OYBvyyoC1q8Hd6tR0/s2q//JTTEBRhF892R9jpUQy4Lnk3A44U5KCf7w30c3lDoHFMJ6ix0ucX2wgIY0GHs/MYcGq0E4ZJoxi0j/tT7pSGICG7UqMPTcb1wSdZcFPOBsxKPIYxoQL0FWQanbKz8YdGd15XZ672uzoDh88t505JqOaULFy814JbwM2ZvTSnJJSm1ERL/OJzUe6UA5UympKLlt6njbtedsr+YR7oLA1XowN9nq3m5fe05OSqkyNTN6Nd9FG0DfZj0O6irJO8/Q/pZ8uCLMrrD5hqHb9b2CBhIwPSNe9nmqapS+oTSNWI2Vufd5CqnLDiJWW2c2nZxCU7KP7BUigf+OW0iDHe5JwAAAAASUVORK5CYII=" alt="Gemini"><img src="https://img.shields.io/badge/-Copilot-4f42c6?logo=github" alt="Copilot"><img src="https://img.shields.io/badge/-Cursor-14120b?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAb1BMVEUUEgsNCgAJBgAkIh1QT0o9OzYfHRgODAAYFg9FRD1ZWFNDQTw7OTRVVE8uLCVKSUQsKiMyMCobGRO8u7r09PTo6Ofh4N+BgX7///+hoJ3W1dLc29hoZ2PIx8R1dHCzsq5gX1tycW1tbGiXlpMAAABPX0V9AAAA0ElEQVR4Ab3RRYLEIAAAQYgnaNyDLP//4khcjzt9LRzwiyB8JMt2XO+e/SCMIoQwuDKEOCKEoE/0rBYlXyNozD6wh1g4xum3mCebQZRm+b4C+xsyVmbVVlFTuEPioHqhvGlcfEBCmJPO1Jb4hJ/Crsjapmn6GJ1x7Gtt595gN3Ttx0SMLiiVUiNK94yRHiZshdbsgM5IIzZaqaFDPljj3YLt34gc7DJ4Xrbv1KCwOf2mYcOguqJUAzM+OGcl0aBTHSUWuMvQTnEDHoLGQPD/vQEqLRggRsFNbQAAAABJRU5ErkJggg==" alt="cursor"><img src="https://img.shields.io/badge/-Windsurf-f1ebe2?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAOVBMVEVHcEz58+n58+n58+n89uzv6d//+/Hi3dSGhH43ODUAAAAkJyVLS0i7t68HDQxoZ2OvrKTMyMCbmZPFMrOHAAAABHRSTlMArf+vt37rogAAAMJJREFUeAHF0sFuAyEMBFDWMQOZBbPw/x/b4oKqpkoOPTQ+jfwAC0EIhzypWwg3eVpHkBf1L6i/UOPuIWGv0viFyGnpneeyxIKFJ7xTaWwekdk2MmPiRTNWPCK7iuAiaYwz5n2sdpr5ztIbvYvcujr61oZPjEAhBwQDuu+Jk6zAmNeiMQEZslETjdfFOa2SZx33bxQMGjlR0GYsG10LzaiezewnapwIj50P6LMG9gx2XbhUInaMoi/f8314iPzlyx/hA1TJDC2j9QgkAAAAAElFTkSuQmCC" alt="windsurf"><img src="https://img.shields.io/badge/-Antigravity-f3f5f6?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAXCAYAAAD+4+QTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEC0lEQVRIiaWUW4hVVRjHf2vtffbZ++xzmzPpKa8khWRCUUkQJnmhHIOYkol6MVOICEajByGn5uIlcIiKIqgXK62oB6EgNOulEA0leigoCEnNcHQ6znhm9rnsy1qrl0bUcc449X9ai+9b/x/f9/EtwTT68f3nUgAZ//S24tjfm90LcqG5lP1rNMx8bJXLO28d+LA5nYc9XQJAs/jnF15S66hZjogdR7tSzs+p5vbgbGUF8OB07+V0CadmV3oupekYsnIM0c55qyhH7KwIRQoniZb/8mznW9N5iFbBwQ823tzW1vwDQNZczx13yVQT8tWItrEGfi1EJiRnhHfnmn2f/z6VT8t2WcX0lhHheCpJY3SGtEnhC0PdbhA6DYphg1wc2jcJ+RLw/IwhXV1dVkB2Y5ikaMRZEu1jIfEltNkRTadG7NZJkjpuHD3dCjLlTO54culDo7ow62JSZji+hfNJmQtqLsNmDufFXIbt+VScOQx7CwhSxfzXm7aun3ElwyrXWVeuHSR5anEelXiktENkbCKjUbKBcsZQehQAS9U7gQMzgoyrwqqRME9T+ERRARMVsGOXSFvEMkHLJnEqR4JP08qQiy919NEnBxjQNwTZtH//4qHQXdIgQxwWiMMSREUSQGkPMBgZg/ARIktiZU3TLrRlerL3sZsTNwQ518itDoRHrH1U2I6Jiog4A4BK0tQAIyMEDkZ4aMsTYaqAI/JrYTLkuoNvGn9drH2SsISJilN1lACLcZmnis+Y3S5q1qy118ubtIxdbxzzTtuiEutCRsU+TjP7b8niJ1voA1I45yxkGaXXG7xljgRfanwiMnJMOfq38rvb11xs2a6KsFbVEt+1lI8d+wBkTPW1I+qjVxm4aqh7Htkxsk2T21PTEiNd0FhGLnoU2NeyXdXQe0LHWaEbWaJEYKv63iO9i3quAQBwuLc0KKkOaqRqGkHFeAS6OGlfJkEinVlP4gkA38Rn7fqZF6/NucrgwoleY8KTE/dQOA9v7jtWmhKybPfPG7UqFaROYWFIJ8G2o4PLx1tBDr2zLrTU+JZAaQKlCXTKraZu3zAlRFHqnji7Sfz9kZ23fdYKMKFv+8vfOKb2JUCsBQHp7ivjlyEP7Dj5VKi8e7QROFpH7fLiCzcCmJBnNbZqkQShllRVZtFju0Yuf5gSYPXLx9tDkXvdGAvXqMhP6j2H+pf+OhPIwVfmnPFVsHXiPmrSu7t2nZ0LIDq6D6Yrs+/+KtTeSgDfBJ/+0D9/w1Rm02nlwOjbAX63MYqMFR9f6J5abbV3vLm3YfzHhdAmpxufHBuY98x/BQCc/s49vHjlvaUI+/7YWPOCKL9E3NUbnFKWSRfM6I6j/Qve+z+AK7Wif2jDmM732ZjgH8NgwQ/pgQWUAAAAAElFTkSuQmCC" alt="Antigravity"></span>
   - title: Hobbies
-    details: Billiards 🎱, Latin Dancing 💃，Games🎮
+    details: Billiards 🎱, Latin Dancing 💃，Taekwondo 🥋, Games🎮
   - title: Every pursuit begins with a spark, and is shaped by persistence.
     details: '<small class="bottom-small">--A little developer with big dreams.</small>'
     link: https://github.com/DuGuYifei
@@ -214,6 +214,16 @@ html.dark .timeline-date {
   margin-bottom: 5px;
 }
 
+.timeline-content .dongchedi-logo {
+  border-radius: 0;
+}
+
+.dongchedi-logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
 .timeline-content .company-name {
   font-size: 14px;
   color: #666;
@@ -267,7 +277,7 @@ html.dark .timeline-date {
     <!-- Item 1 - Left side -->
     <div class="timeline-item timeline-left">
       <div class="timeline-dot"></div>
-      <div class="timeline-date">April 2024 - Present</div>
+      <div class="timeline-date">April 2024 - August 2026</div>
       <div class="timeline-content">
         <div class="company-logo">
           <a href="https://www.tum.de/studium/studienangebot/detail/informatik-games-engineering-master-of-science-msc" target="blank" ><img src="/exp/tum-logo.png" alt="TUM Logo"></a>
@@ -294,9 +304,21 @@ html.dark .timeline-date {
   <h3 class="section-title">Work Experience</h3>
   <div class="timeline-container">
     <div class="center-line"></div>    
+    <div class="timeline-item timeline-left">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">SEP 2026 – Present</div>
+      <div class="timeline-content">
+        <div class="company-logo dongchedi-logo">
+          <a href="https://www.dongchedi.com/" target="_blank" rel="noopener noreferrer"><img src="/exp/dongchedi.png" alt="懂车帝 Logo"></a>
+        </div>
+        <div class="job-title">Full Stack</div>
+        <div>AI Product R&amp;D</div>
+        <a href="https://www.dongchedi.com/" target="_blank" rel="noopener noreferrer" style="color: inherit;"><div class="company-name">DCar (Dongchedi | ByteDance)</div></a>
+      </div>
+    </div>
      <div class="timeline-item timeline-right">
       <div class="timeline-dot"></div>
-      <div class="timeline-date">OCT 2025 – Present</div>
+      <div class="timeline-date">OCT 2025 – AUG 2026</div>
       <div class="timeline-content">
         <div class="company-logo">
           <a href="https://www.check24.de/" target="blank"><img src="/exp/check24.png" alt="Check24 Logo"></a>
